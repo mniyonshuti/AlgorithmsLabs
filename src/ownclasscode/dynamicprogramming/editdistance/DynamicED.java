@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DynamicED {
     public static void main(String[] args) {
         DynamicED recursiveED = new DynamicED();
-        System.out.println(recursiveED.ed("duck", "tug"));
+        System.out.println(recursiveED.ed("KediKebba", "Kedi"));
     }
     private int selfCalls = -1;
     int[][] ints;

@@ -6,7 +6,7 @@ public class QuestionThreeDynamic {
 
     public static void main(String[] args) {
         QuestionThreeDynamic interviewQuestion3 = new QuestionThreeDynamic();
-        System.out.println(interviewQuestion3.longestSubSequence("regular", "ruler"));
+        System.out.println(interviewQuestion3.longestSubSequence("maple", "kale"));
         System.out.println("Self calls " + interviewQuestion3.selfCalls);
     }
 
