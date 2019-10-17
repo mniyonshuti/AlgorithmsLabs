@@ -58,21 +58,25 @@ public class Graph {
 		return edges;
 	}
 
-	//TO-DO
+	//Method in the graph class
 	public boolean isConnected() {
-		return false;
+		IsConnected isConnected = new IsConnected(this);
+		return isConnected.isConnected();
 	}
-	//TO-DO
+	//Method in the graph class
 	public boolean hasPathBetween(Vertex u, Vertex v) {
-		return false;
+		PathExists pathExists = new PathExists(this);
+		return pathExists.pathExists(u, v);
 	}
-	//TO-DO
+	//Method in the graph class
 	public boolean containsCycle() {
-		return false;
+		HasCycle hasCycle = new HasCycle(this);
+		return hasCycle.hasCycle();
 	}
-	//TO-DO
+	//Method in the graph class
     int shortestPathLength(Vertex u, Vertex v) {
-    	return -1;
+		ShortestPath shortestPath = new ShortestPath(this);
+    	return shortestPath.computeShortestPathLength(u,v);
     }
 
 	/**
@@ -151,4 +155,6 @@ public class Graph {
 			return false;
 
 	}
+
+
 }
